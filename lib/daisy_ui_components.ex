@@ -62,38 +62,68 @@ defmodule DaisyUIComponents do
 
       import DaisyUIComponents.Accordion
       import DaisyUIComponents.Alert
+      import DaisyUIComponents.Artboard
       import DaisyUIComponents.Avatar
       import DaisyUIComponents.Back
       import DaisyUIComponents.Badge
+      import DaisyUIComponents.Browser
       import DaisyUIComponents.Breadcrumbs
       import DaisyUIComponents.Card
+      import DaisyUIComponents.Calendar
+      import DaisyUIComponents.Carousel
+      import DaisyUIComponents.Chat
       import DaisyUIComponents.Checkbox
+      import DaisyUIComponents.Code
       import DaisyUIComponents.Collapse
+      import DaisyUIComponents.Countdown
+      import DaisyUIComponents.Diff
+      import DaisyUIComponents.Divider
+      import DaisyUIComponents.Dock
       import DaisyUIComponents.Drawer
       import DaisyUIComponents.Dropdown
+      import DaisyUIComponents.Fab
       import DaisyUIComponents.Fieldset
+      import DaisyUIComponents.FileInput
+      import DaisyUIComponents.Filter
       import DaisyUIComponents.Footer
       import DaisyUIComponents.Hero
+      import DaisyUIComponents.Hover3D
+      import DaisyUIComponents.HoverGallery
       import DaisyUIComponents.Indicator
       import DaisyUIComponents.Join
+      import DaisyUIComponents.Kbd
       import DaisyUIComponents.Label
+      import DaisyUIComponents.Link
       import DaisyUIComponents.Loading
+      import DaisyUIComponents.Mask
       import DaisyUIComponents.Menu
       import DaisyUIComponents.Modal
       import DaisyUIComponents.Navbar
       import DaisyUIComponents.Pagination
+      import DaisyUIComponents.Phone
       import DaisyUIComponents.Progress
+      import DaisyUIComponents.RadialProgress
       import DaisyUIComponents.Radio
       import DaisyUIComponents.Range
+      import DaisyUIComponents.Rating
       import DaisyUIComponents.Select
       import DaisyUIComponents.Sidebar
+      import DaisyUIComponents.Skeleton
+      import DaisyUIComponents.Stack
       import DaisyUIComponents.Stat
+      import DaisyUIComponents.Status
+      import DaisyUIComponents.Steps
       import DaisyUIComponents.Swap
       import DaisyUIComponents.Tabs
       import DaisyUIComponents.TextInput
+      import DaisyUIComponents.TextRotate
       import DaisyUIComponents.Textarea
+      import DaisyUIComponents.ThemeController
+      import DaisyUIComponents.Timeline
+      import DaisyUIComponents.Toast
       import DaisyUIComponents.Toggle
       import DaisyUIComponents.Tooltip
+      import DaisyUIComponents.Window
     end
   end
 end

@@ -7,6 +7,7 @@ defmodule <%= if not @dev do @web_namespace <> "." end %>DaisyUIComponents.Input
 
   import <%= if not @dev do @web_namespace <> "." end %>DaisyUIComponents.Checkbox
   import <%= if not @dev do @web_namespace <> "." end %>DaisyUIComponents.Dropdown
+  import <%= if not @dev do @web_namespace <> "." end %>DaisyUIComponents.FileInput
   import <%= if not @dev do @web_namespace <> "." end %>DaisyUIComponents.Menu
   import <%= if not @dev do @web_namespace <> "." end %>DaisyUIComponents.Radio
   import <%= if not @dev do @web_namespace <> "." end %>DaisyUIComponents.Range
@@ -153,6 +154,16 @@ defmodule <%= if not @dev do @web_namespace <> "." end %>DaisyUIComponents.Input
       <option :if={@prompt} value="">{@prompt}</option>
       {Phoenix.HTML.Form.options_for_select(@options, @value)}
     </.select>
+    """
+  end
+
+  def input(%{type: "file"} = assigns) do
+    assigns =
+      assigns
+      |> assign_new(:name, fn -> nil end)
+
+    ~H"""
+    <.file_input class={@class} color={@color} ghost={@ghost} {@rest} />
     """
   end
 

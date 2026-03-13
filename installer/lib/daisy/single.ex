@@ -9,46 +9,74 @@ defmodule Daisy.New.Single do
     "daisy_ui_components.ex": "lib/daisy_ui_components.ex",
     "components/accordion.ex": "lib/daisy_ui_components/accordion.ex",
     "components/alert.ex": "lib/daisy_ui_components/alert.ex",
+    "components/artboard.ex": "lib/daisy_ui_components/artboard.ex",
     "components/avatar.ex": "lib/daisy_ui_components/avatar.ex",
     "components/back.ex": "lib/daisy_ui_components/back.ex",
     "components/badge.ex": "lib/daisy_ui_components/badge.ex",
+    "components/browser.ex": "lib/daisy_ui_components/browser.ex",
     "components/breadcrumbs.ex": "lib/daisy_ui_components/breadcrumbs.ex",
     "components/button.ex": "lib/daisy_ui_components/button.ex",
+    "components/calendar.ex": "lib/daisy_ui_components/calendar.ex",
     "components/card.ex": "lib/daisy_ui_components/card.ex",
+    "components/carousel.ex": "lib/daisy_ui_components/carousel.ex",
+    "components/chat.ex": "lib/daisy_ui_components/chat.ex",
     "components/checkbox.ex": "lib/daisy_ui_components/checkbox.ex",
+    "components/code.ex": "lib/daisy_ui_components/code.ex",
     "components/collapse.ex": "lib/daisy_ui_components/collapse.ex",
+    "components/countdown.ex": "lib/daisy_ui_components/countdown.ex",
+    "components/diff.ex": "lib/daisy_ui_components/diff.ex",
+    "components/divider.ex": "lib/daisy_ui_components/divider.ex",
+    "components/dock.ex": "lib/daisy_ui_components/dock.ex",
     "components/drawer.ex": "lib/daisy_ui_components/drawer.ex",
     "components/dropdown.ex": "lib/daisy_ui_components/dropdown.ex",
+    "components/fab.ex": "lib/daisy_ui_components/fab.ex",
     "components/fieldset.ex": "lib/daisy_ui_components/fieldset.ex",
+    "components/file_input.ex": "lib/daisy_ui_components/file_input.ex",
+    "components/filter.ex": "lib/daisy_ui_components/filter.ex",
     "components/flash.ex": "lib/daisy_ui_components/flash.ex",
     "components/footer.ex": "lib/daisy_ui_components/footer.ex",
     "components/form.ex": "lib/daisy_ui_components/form.ex",
     "components/header.ex": "lib/daisy_ui_components/header.ex",
     "components/hero.ex": "lib/daisy_ui_components/hero.ex",
+    "components/hover_3d.ex": "lib/daisy_ui_components/hover_3d.ex",
+    "components/hover_gallery.ex": "lib/daisy_ui_components/hover_gallery.ex",
     "components/icon.ex": "lib/daisy_ui_components/icon.ex",
     "components/indicator.ex": "lib/daisy_ui_components/indicator.ex",
     "components/input.ex": "lib/daisy_ui_components/input.ex",
     "components/join.ex": "lib/daisy_ui_components/join.ex",
+    "components/kbd.ex": "lib/daisy_ui_components/kbd.ex",
     "components/label.ex": "lib/daisy_ui_components/label.ex",
+    "components/link.ex": "lib/daisy_ui_components/link.ex",
     "components/list.ex": "lib/daisy_ui_components/list.ex",
     "components/loading.ex": "lib/daisy_ui_components/loading.ex",
+    "components/mask.ex": "lib/daisy_ui_components/mask.ex",
     "components/menu.ex": "lib/daisy_ui_components/menu.ex",
     "components/modal.ex": "lib/daisy_ui_components/modal.ex",
     "components/navbar.ex": "lib/daisy_ui_components/navbar.ex",
     "components/pagination.ex": "lib/daisy_ui_components/pagination.ex",
+    "components/phone.ex": "lib/daisy_ui_components/phone.ex",
     "components/progress.ex": "lib/daisy_ui_components/progress.ex",
+    "components/radial_progress.ex": "lib/daisy_ui_components/radial_progress.ex",
     "components/radio.ex": "lib/daisy_ui_components/radio.ex",
     "components/range.ex": "lib/daisy_ui_components/range.ex",
+    "components/rating.ex": "lib/daisy_ui_components/rating.ex",
     "components/select.ex": "lib/daisy_ui_components/select.ex",
     "components/sidebar.ex": "lib/daisy_ui_components/sidebar.ex",
+    "components/skeleton.ex": "lib/daisy_ui_components/skeleton.ex",
+    "components/stack.ex": "lib/daisy_ui_components/stack.ex",
     "components/stat.ex": "lib/daisy_ui_components/stat.ex",
+    "components/status.ex": "lib/daisy_ui_components/status.ex",
     "components/swap.ex": "lib/daisy_ui_components/swap.ex",
     "components/table.ex": "lib/daisy_ui_components/table.ex",
     "components/tabs.ex": "lib/daisy_ui_components/tabs.ex",
     "components/text_input.ex": "lib/daisy_ui_components/text_input.ex",
+    "components/text_rotate.ex": "lib/daisy_ui_components/text_rotate.ex",
     "components/textarea.ex": "lib/daisy_ui_components/textarea.ex",
+    "components/theme_controller.ex": "lib/daisy_ui_components/theme_controller.ex",
+    "components/timeline.ex": "lib/daisy_ui_components/timeline.ex",
     "components/toggle.ex": "lib/daisy_ui_components/toggle.ex",
     "components/tooltip.ex": "lib/daisy_ui_components/tooltip.ex",
+    "components/window.ex": "lib/daisy_ui_components/window.ex",
     "components/steps.ex": "lib/daisy_ui_components/steps.ex",
     "components/toast.ex": "lib/daisy_ui_components/toast.ex"
   ]
@@ -68,6 +96,10 @@ defmodule Daisy.New.Single do
     {:eex, :web, "components/alert.ex": "lib/:lib_web_name/daisy_ui_components/alert.ex"}
   ])
 
+  template(:artboard, [
+    {:eex, :web, "components/artboard.ex": "lib/:lib_web_name/daisy_ui_components/artboard.ex"}
+  ])
+
   template(:avatar, [
     {:eex, :web, "components/avatar.ex": "lib/:lib_web_name/daisy_ui_components/avatar.ex"}
   ])
@@ -80,6 +112,10 @@ defmodule Daisy.New.Single do
     {:eex, :web, "components/badge.ex": "lib/:lib_web_name/daisy_ui_components/badge.ex"}
   ])
 
+  template(:browser, [
+    {:eex, :web, "components/browser.ex": "lib/:lib_web_name/daisy_ui_components/browser.ex"}
+  ])
+
   template(:breadcrumbs, [
     {:eex, :web,
      "components/breadcrumbs.ex": "lib/:lib_web_name/daisy_ui_components/breadcrumbs.ex"}
@@ -89,16 +125,48 @@ defmodule Daisy.New.Single do
     {:eex, :web, "components/button.ex": "lib/:lib_web_name/daisy_ui_components/button.ex"}
   ])
 
+  template(:calendar, [
+    {:eex, :web, "components/calendar.ex": "lib/:lib_web_name/daisy_ui_components/calendar.ex"}
+  ])
+
   template(:card, [
     {:eex, :web, "components/card.ex": "lib/:lib_web_name/daisy_ui_components/card.ex"}
+  ])
+
+  template(:carousel, [
+    {:eex, :web, "components/carousel.ex": "lib/:lib_web_name/daisy_ui_components/carousel.ex"}
+  ])
+
+  template(:chat, [
+    {:eex, :web, "components/chat.ex": "lib/:lib_web_name/daisy_ui_components/chat.ex"}
   ])
 
   template(:checkbox, [
     {:eex, :web, "components/checkbox.ex": "lib/:lib_web_name/daisy_ui_components/checkbox.ex"}
   ])
 
+  template(:code, [
+    {:eex, :web, "components/code.ex": "lib/:lib_web_name/daisy_ui_components/code.ex"}
+  ])
+
   template(:collapse, [
     {:eex, :web, "components/collapse.ex": "lib/:lib_web_name/daisy_ui_components/collapse.ex"}
+  ])
+
+  template(:countdown, [
+    {:eex, :web, "components/countdown.ex": "lib/:lib_web_name/daisy_ui_components/countdown.ex"}
+  ])
+
+  template(:diff, [
+    {:eex, :web, "components/diff.ex": "lib/:lib_web_name/daisy_ui_components/diff.ex"}
+  ])
+
+  template(:divider, [
+    {:eex, :web, "components/divider.ex": "lib/:lib_web_name/daisy_ui_components/divider.ex"}
+  ])
+
+  template(:dock, [
+    {:eex, :web, "components/dock.ex": "lib/:lib_web_name/daisy_ui_components/dock.ex"}
   ])
 
   template(:drawer, [
@@ -109,8 +177,21 @@ defmodule Daisy.New.Single do
     {:eex, :web, "components/dropdown.ex": "lib/:lib_web_name/daisy_ui_components/dropdown.ex"}
   ])
 
+  template(:fab, [
+    {:eex, :web, "components/fab.ex": "lib/:lib_web_name/daisy_ui_components/fab.ex"}
+  ])
+
   template(:fieldset, [
     {:eex, :web, "components/fieldset.ex": "lib/:lib_web_name/daisy_ui_components/fieldset.ex"}
+  ])
+
+  template(:file_input, [
+    {:eex, :web,
+     "components/file_input.ex": "lib/:lib_web_name/daisy_ui_components/file_input.ex"}
+  ])
+
+  template(:filter, [
+    {:eex, :web, "components/filter.ex": "lib/:lib_web_name/daisy_ui_components/filter.ex"}
   ])
 
   template(:flash, [
@@ -133,6 +214,15 @@ defmodule Daisy.New.Single do
     {:eex, :web, "components/hero.ex": "lib/:lib_web_name/daisy_ui_components/hero.ex"}
   ])
 
+  template(:hover_3d, [
+    {:eex, :web, "components/hover_3d.ex": "lib/:lib_web_name/daisy_ui_components/hover_3d.ex"}
+  ])
+
+  template(:hover_gallery, [
+    {:eex, :web,
+     "components/hover_gallery.ex": "lib/:lib_web_name/daisy_ui_components/hover_gallery.ex"}
+  ])
+
   template(:icon, [
     {:eex, :web, "components/icon.ex": "lib/:lib_web_name/daisy_ui_components/icon.ex"}
   ])
@@ -149,8 +239,16 @@ defmodule Daisy.New.Single do
     {:eex, :web, "components/join.ex": "lib/:lib_web_name/daisy_ui_components/join.ex"}
   ])
 
+  template(:kbd, [
+    {:eex, :web, "components/kbd.ex": "lib/:lib_web_name/daisy_ui_components/kbd.ex"}
+  ])
+
   template(:label, [
     {:eex, :web, "components/label.ex": "lib/:lib_web_name/daisy_ui_components/label.ex"}
+  ])
+
+  template(:link, [
+    {:eex, :web, "components/link.ex": "lib/:lib_web_name/daisy_ui_components/link.ex"}
   ])
 
   template(:list, [
@@ -159,6 +257,10 @@ defmodule Daisy.New.Single do
 
   template(:loading, [
     {:eex, :web, "components/loading.ex": "lib/:lib_web_name/daisy_ui_components/loading.ex"}
+  ])
+
+  template(:mask, [
+    {:eex, :web, "components/mask.ex": "lib/:lib_web_name/daisy_ui_components/mask.ex"}
   ])
 
   template(:menu, [
@@ -178,8 +280,17 @@ defmodule Daisy.New.Single do
      "components/pagination.ex": "lib/:lib_web_name/daisy_ui_components/pagination.ex"}
   ])
 
+  template(:phone, [
+    {:eex, :web, "components/phone.ex": "lib/:lib_web_name/daisy_ui_components/phone.ex"}
+  ])
+
   template(:progress, [
     {:eex, :web, "components/progress.ex": "lib/:lib_web_name/daisy_ui_components/progress.ex"}
+  ])
+
+  template(:radial_progress, [
+    {:eex, :web,
+     "components/radial_progress.ex": "lib/:lib_web_name/daisy_ui_components/radial_progress.ex"}
   ])
 
   template(:radio, [
@@ -190,6 +301,10 @@ defmodule Daisy.New.Single do
     {:eex, :web, "components/range.ex": "lib/:lib_web_name/daisy_ui_components/range.ex"}
   ])
 
+  template(:rating, [
+    {:eex, :web, "components/rating.ex": "lib/:lib_web_name/daisy_ui_components/rating.ex"}
+  ])
+
   template(:select, [
     {:eex, :web, "components/select.ex": "lib/:lib_web_name/daisy_ui_components/select.ex"}
   ])
@@ -198,8 +313,20 @@ defmodule Daisy.New.Single do
     {:eex, :web, "components/sidebar.ex": "lib/:lib_web_name/daisy_ui_components/sidebar.ex"}
   ])
 
+  template(:skeleton, [
+    {:eex, :web, "components/skeleton.ex": "lib/:lib_web_name/daisy_ui_components/skeleton.ex"}
+  ])
+
+  template(:stack, [
+    {:eex, :web, "components/stack.ex": "lib/:lib_web_name/daisy_ui_components/stack.ex"}
+  ])
+
   template(:stat, [
     {:eex, :web, "components/stat.ex": "lib/:lib_web_name/daisy_ui_components/stat.ex"}
+  ])
+
+  template(:status, [
+    {:eex, :web, "components/status.ex": "lib/:lib_web_name/daisy_ui_components/status.ex"}
   ])
 
   template(:swap, [
@@ -219,8 +346,22 @@ defmodule Daisy.New.Single do
      "components/text_input.ex": "lib/:lib_web_name/daisy_ui_components/text_input.ex"}
   ])
 
+  template(:text_rotate, [
+    {:eex, :web,
+     "components/text_rotate.ex": "lib/:lib_web_name/daisy_ui_components/text_rotate.ex"}
+  ])
+
   template(:textarea, [
     {:eex, :web, "components/textarea.ex": "lib/:lib_web_name/daisy_ui_components/textarea.ex"}
+  ])
+
+  template(:theme_controller, [
+    {:eex, :web,
+     "components/theme_controller.ex": "lib/:lib_web_name/daisy_ui_components/theme_controller.ex"}
+  ])
+
+  template(:timeline, [
+    {:eex, :web, "components/timeline.ex": "lib/:lib_web_name/daisy_ui_components/timeline.ex"}
   ])
 
   template(:toggle, [
@@ -229,6 +370,10 @@ defmodule Daisy.New.Single do
 
   template(:tooltip, [
     {:eex, :web, "components/tooltip.ex": "lib/:lib_web_name/daisy_ui_components/tooltip.ex"}
+  ])
+
+  template(:window, [
+    {:eex, :web, "components/window.ex": "lib/:lib_web_name/daisy_ui_components/window.ex"}
   ])
 
   template(:steps, [
@@ -351,6 +496,7 @@ defmodule Daisy.New.Single do
   defp add_deps(set, "input") do
     add_dep_component(set, "checkbox")
     |> add_dep_component("dropdown")
+    |> add_dep_component("file_input")
     |> add_dep_component("menu")
     |> add_dep_component("radio")
     |> add_dep_component("range")

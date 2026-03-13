@@ -7,6 +7,7 @@ defmodule DaisyUIComponents.Input do
 
   import DaisyUIComponents.Checkbox
   import DaisyUIComponents.Dropdown
+  import DaisyUIComponents.FileInput
   import DaisyUIComponents.Menu
   import DaisyUIComponents.Radio
   import DaisyUIComponents.Range
@@ -156,6 +157,16 @@ defmodule DaisyUIComponents.Input do
     """
   end
 
+  def input(%{type: "file"} = assigns) do
+    assigns =
+      assigns
+      |> assign_new(:name, fn -> nil end)
+
+    ~H"""
+    <.file_input class={@class} color={@color} ghost={@ghost} {@rest} />
+    """
+  end
+
   def input(%{type: "autocomplete"} = assigns) do
     selected_label =
       Enum.find_value(assigns.options, fn {label, value} ->
@@ -217,7 +228,9 @@ defmodule DaisyUIComponents.Input do
       |> assign_new(:value, fn -> nil end)
 
     ~H"""
-    <.textarea id={@id} name={@name} class={@class} color={@color} ghost={@ghost} {@rest}>{Phoenix.HTML.Form.normalize_value(@type, @value)}</.textarea>
+    <.textarea id={@id} name={@name} class={@class} color={@color} ghost={@ghost} {@rest}>
+      {Phoenix.HTML.Form.normalize_value(@type, @value)}
+    </.textarea>
     """
   end
 
